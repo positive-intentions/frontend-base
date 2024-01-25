@@ -3,23 +3,43 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "webpack serve",
+    "start": "storybook dev -p 6006 -s public",
+    "start:webpack": "webpack serve",
     "build": "webpack --mode production",
+    "build:storybook": "storybook build -s public",
     "build:frontend": "webpack --mode production && rm -rf ./Frontend && mkdir ./Frontend && mv dist/* ./Frontend",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve:storybook": "serve -s storybook-static",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.23.9",
     "@babel/preset-react": "^7.23.3",
+    "@storybook/addon-essentials": "^7.6.10",
+    "@storybook/addon-interactions": "^7.6.10",
+    "@storybook/addon-links": "^7.6.10",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/addon-themes": "^7.6.10",
+    "@storybook/blocks": "^7.6.10",
+    "@storybook/react": "^7.6.10",
+    "@storybook/react-webpack5": "^7.6.10",
+    "@storybook/test": "^7.6.10",
     "babel-loader": "^9.1.3",
     "html-webpack-plugin": "^5.6.0",
+    "serve": "^14.2.1",
+    "storybook": "^7.6.10",
     "webpack": "^5.90.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/material-icons": "^5.0.11",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/material": "^5.15.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
