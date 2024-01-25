@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfrontend_base=self.webpackChunkfrontend_base||[]).push([[90],{90:(e,n,t)=>{t.r(n),t.d(n,{default:()=>r});var s=t(416),a=t.n(s);const r=({...e})=>a().createElement("button",e)}}]);
