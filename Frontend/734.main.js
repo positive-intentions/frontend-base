@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfrontend_base=self.webpackChunkfrontend_base||[]).push([[734],{734:(e,n,l)=>{l.r(n);var t=l(416),r=l.n(t),a=l(51);const c=()=>r().createElement("div",null,r().createElement("h1",null,"Hello world"));l.n(a)().render(r().createElement(c,null),document.getElementById("app"))}}]);

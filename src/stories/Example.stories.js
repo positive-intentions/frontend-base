@@ -20,6 +20,7 @@ export default {
 export const Basic = {
   args: {
     children: 'positive-intentions',
+    onClick: () => alert('positive-intentions'),
   },
 };
 

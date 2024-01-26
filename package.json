@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "storybook dev -p 6006 -s public",
+    "start": "storybook dev -p 6006",
     "start:webpack": "webpack serve",
     "build": "webpack --mode production",
-    "build:storybook": "storybook build -s public",
-    "build:frontend": "webpack --mode production && rm -rf ./Frontend && mkdir ./Frontend && mv dist/* ./Frontend",
-    "serve:storybook": "serve -s storybook-static",
+    "build:storybook": "storybook build && rm -rf ./Frontend && mkdir ./Frontend && mv storybook-static/* ./Frontend",
+    "build:frontend": "webpack --mode production && mv dist/remoteEntry.js ./Frontend",
+    "serve:storybook": "serve storybook-static",
+    "serve": "serve Frontend",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -31,6 +32,7 @@
     "html-webpack-plugin": "^5.6.0",
     "serve": "^14.2.1",
     "storybook": "^7.6.10",
+    "storybook-dark-mode": "^3.0.3",
     "webpack": "^5.90.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"

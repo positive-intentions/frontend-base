@@ -28,7 +28,7 @@ module.exports = {
             name: 'frontendBase',
             filename: 'remoteEntry.js',
             exposes: {
-                // './Example': './src/storybook/components/Example.tsx',
+                './Example': './src/stories/components/Example.tsx',
             },
             shared: {react: {singleton: true}, "react-dom": {singleton: true}}
         }),
