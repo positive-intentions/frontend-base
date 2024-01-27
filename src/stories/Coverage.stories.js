@@ -5,7 +5,7 @@ import Example from './components/Example.tsx';
 export default {
   title: 'Coverage/Coverage',
   component: () => <iframe
-    src="coverage/"
+    src="coverage-report/"
     style={{height: '99vh', width: '100%', border: 0 }} />,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout

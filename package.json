@@ -10,7 +10,7 @@
     "build": "webpack --mode production",
     "build:storybook": "storybook build && rm -rf ./Frontend && mkdir ./Frontend && mv storybook-static/* ./Frontend",
     "build:frontend": "webpack --mode production && mv dist/remoteEntry.js ./Frontend",
-    "build:coverage": "jest --coverage && mv coverage/lcov-report ./Frontend/coverage",
+    "build:coverage": "jest --coverage && mv coverage/lcov-report ./Frontend/coverage-report",
     "serve:storybook": "serve storybook-static",
     "serve": "serve Frontend",
     "storybook": "storybook dev -p 6006",
