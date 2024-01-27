@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Example from './stories/components/Example.tsx';
+import React from "react";
+import { createRoot } from "react-dom/client.js";
+import Example from "./stories/components/Example.tsx";
 
 const App = () => {
-    return (
-        <div>
-            <Example>positive-intentions</Example>
-        </div>
-    );
+  return (
+    <div>
+      <Example>positive-intentions</Example>
+    </div>
+  );
 };
 
-ReactDOM.render(<App />, document.getElementById('app'));
-
+const root = createRoot(document.getElementById("app"));
+root.render(<App />);

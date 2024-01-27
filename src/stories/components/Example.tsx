@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const Button = ({ children, ...rest }) => {
-  return <button {...rest}>{children}</button>;
+const Button = ({ ...rest }) => {
+  return <button {...rest} />;
 };
 
 export default Button;
