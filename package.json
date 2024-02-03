@@ -12,7 +12,7 @@
     "test:watch": "jest --watchAll",
     "build": "npm run build:storybook && npm run build:frontend &&  npm run build:coverage",
     "build:storybook": "storybook build && rm -rf ./Frontend && mkdir ./Frontend && mv storybook-static/* ./Frontend",
-    "build:frontend": "webpack --mode production && mv dist/remoteEntry.js ./Frontend",
+    "build:frontend": "webpack --mode production && cp -r dist/* ./Frontend",
     "build:coverage": "jest --coverage && mv coverage/lcov-report ./Frontend/coverage-report",
     "serve:storybook": "serve storybook-static",
     "serve": "serve Frontend",
