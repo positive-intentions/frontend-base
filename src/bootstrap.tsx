@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import Example from "./stories/components/Example.tsx";
+import Example from "./atomic/pages/main"
 
 const App = () => {
   return (
@@ -11,5 +11,5 @@ const App = () => {
 };
 
 const container = document.getElementById("app");
-const root = createRoot(container); // createRoot(container!) if you use TypeScript
+const root = createRoot(container);
 root.render(<App />);

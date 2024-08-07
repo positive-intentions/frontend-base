@@ -11,6 +11,9 @@ module.exports = {
         path: __dirname + '/dist',
         publicPath: 'auto',
     },
+    resolve: {
+        extensions: ['.js', '.tsx', '.jsx', '.ts']
+    },
     module: {
         rules: [
             {

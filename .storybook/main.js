@@ -6,6 +6,7 @@ const config = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     'storybook-dark-mode',
+    "@storybook/preset-scss"
   ],
   framework: {
     name: "@storybook/react-webpack5",

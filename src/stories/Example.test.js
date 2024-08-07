@@ -16,8 +16,4 @@ test("Checks if the Example component renders with children and triggers onClick
 
   const buttonElement = screen.getByRole("button");
   fireEvent.click(buttonElement);
-
-  // Adjust the assertion based on your actual implementation of the Example component
-  // For example, you might want to check if the onClick function is called.
-  // Example: expect(mockOnClick).toHaveBeenCalled();
 });
