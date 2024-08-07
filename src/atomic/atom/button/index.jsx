@@ -1,9 +1,9 @@
 import React from "react";
 
-import './index.scss'
+import style from './index.module.scss'
 
 const Button = ({ ...rest }) => {
-  return <button {...rest} />;
+  return <button className={style.MyButton} {...rest} />;
 };
 
 export default Button;
